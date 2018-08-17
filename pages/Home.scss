@@ -1,4 +1,4 @@
-@import "../components/common/Common.scss";
+@import "../components/common/styles/Common.scss";
 
 section.Header {
   color: white;
@@ -7,7 +7,7 @@ section.Header {
   background-size: cover;
 
   .callout {
-    max-width: 600px;
+    max-width: 700px;
   }
 
   .my-name {
@@ -25,4 +25,12 @@ section.Header {
   .my-description {
     margin-top: 10px;
   }
+}
+
+section.AboutMe {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+section.Experience {
 }

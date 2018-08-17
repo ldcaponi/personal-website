@@ -1,6 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import Navbar from "../components/navbar/Navbar";
+import Heading from "../components/common/heading/Heading";
 import "./Home.scss";
 
 class Home extends React.Component {
@@ -23,6 +24,35 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
+
+        <section className="AboutMe">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 col-lg-3">
+                <div className="text-center">
+                  <Heading>About Me</Heading>
+                </div>
+              </div>
+
+              <div className="col-sm-12 col-lg-9">
+                <div className="text-center">
+                  I am a software developer with several years of experience in
+                  web application development. My strengths lie in architecting
+                  robust solutions that become a solid foundation for
+                  extensibility and reusability. With a strong academic
+                  background in Mathematics, I take my love for problem solving
+                  into everything I do. I have industry experience with
+                  consulting for large organizations like{" "}
+                  <span style={{ color: "dodgerblue" }}>
+                    Raymond James Financial
+                  </span>{" "}
+                  and
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="Experience">hi</section>
       </div>
     );
   }
