@@ -21,6 +21,15 @@ class Home extends React.Component {
                 JavaScript Developer from Long Island, New York with a strong
                 focus on modern frontend libraries, frameworks, and tooling.
               </div>
+              <div className="my-resume">
+                <a
+                  href="/static/files/Resume_Caponi_Lou.pdf"
+                  target="_blank"
+                  className="button button-primary button-pill"
+                >
+                  View Resume
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -41,12 +50,14 @@ class Home extends React.Component {
                   robust solutions that become a solid foundation for
                   extensibility and reusability. With a strong academic
                   background in Mathematics, I take my love for problem solving
-                  into everything I do. I have industry experience with
-                  consulting for large organizations like{" "}
+                  into everything I do. I have strong industry experience
+                  developing enterprise level applications with large
+                  organizations like{" "}
                   <span style={{ color: "dodgerblue" }}>
                     Raymond James Financial
                   </span>{" "}
-                  and
+                  and{" "}
+                  <span style={{ color: "dodgerblue" }}>CA Technologies</span>.{" "}
                 </div>
               </div>
             </div>
