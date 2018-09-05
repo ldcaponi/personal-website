@@ -64,6 +64,39 @@ class Home extends React.Component {
           </div>
         </section>
         <section className="Experience">hi</section>
+        <section className="Contact">
+          <form className="pure-form">
+            <fieldset className="pure-group">
+              <input
+                type="text"
+                className="pure-input-1-2"
+                placeholder="Username"
+              />
+              <input
+                type="text"
+                className="pure-input-1-2"
+                placeholder="Password"
+              />
+              <input
+                type="email"
+                className="pure-input-1-2"
+                placeholder="Email"
+              />
+            </fieldset>
+
+            <fieldset className="pure-group">
+              <input
+                type="text"
+                className="pure-input-1-2"
+                placeholder="A title"
+              />
+              <textarea
+                className="pure-input-1-2"
+                placeholder="Textareas work too"
+              />
+            </fieldset>
+          </form>
+        </section>
       </div>
     );
   }
