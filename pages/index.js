@@ -2,6 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import Navbar from "../components/navbar/Navbar";
 import Heading from "../components/common/heading/Heading";
+import PortfolioItem from "../components/common/cards/PortfolioItem";
 import "./Home.scss";
 
 class Home extends React.Component {
@@ -64,7 +65,22 @@ class Home extends React.Component {
           </div>
         </section>
         <section className="Experience">hi</section>
+        <section className="CodeSamples">
+          <div className="text-center">
+            <Heading>Portfolio</Heading>
+          </div>
+          <div className="row">
+            <div className="col-lg-6 col-sm-12">
+              <PortfolioItem
+                title="React Dashboard Starter"
+                description="Some description"
+                tags={["Javascript", "Sass"]}
+              />
+            </div>
+          </div>
+        </section>
         <section className="Contact">
+          <h1 className="section-header">Get in Touch</h1>
           <div className="row">
             <div className="col-sm-2" />
             <div className="col-sm-8">

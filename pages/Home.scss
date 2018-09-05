@@ -39,6 +39,10 @@ section.AboutMe {
 section.Experience {
 }
 
+section.CodeSamples {
+  background: #eee;
+}
+
 section.Contact {
   padding: 50px 0;
   background: dodgerblue;
@@ -47,5 +51,10 @@ section.Contact {
   }
   input {
     margin-bottom: 10px !important;
+  }
+
+  .section-header {
+    text-align: center;
+    color: white;
   }
 }
