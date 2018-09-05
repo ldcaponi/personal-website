@@ -38,3 +38,14 @@ section.AboutMe {
 
 section.Experience {
 }
+
+section.Contact {
+  padding: 50px 0;
+  background: dodgerblue;
+  label {
+    color: white;
+  }
+  input {
+    margin-bottom: 10px !important;
+  }
+}

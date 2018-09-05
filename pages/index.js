@@ -65,37 +65,45 @@ class Home extends React.Component {
         </section>
         <section className="Experience">hi</section>
         <section className="Contact">
-          <form className="pure-form">
-            <fieldset className="pure-group">
-              <input
-                type="text"
-                className="pure-input-1-2"
-                placeholder="Username"
-              />
-              <input
-                type="text"
-                className="pure-input-1-2"
-                placeholder="Password"
-              />
-              <input
-                type="email"
-                className="pure-input-1-2"
-                placeholder="Email"
-              />
-            </fieldset>
-
-            <fieldset className="pure-group">
-              <input
-                type="text"
-                className="pure-input-1-2"
-                placeholder="A title"
-              />
-              <textarea
-                className="pure-input-1-2"
-                placeholder="Textareas work too"
-              />
-            </fieldset>
-          </form>
+          <div className="row">
+            <div className="col-sm-2" />
+            <div className="col-sm-8">
+              <form
+                className="pure-form"
+                action="https://formspree.io/ldcaponi@gmail.com"
+                method="POST"
+              >
+                <fieldset className="pure-group">
+                  <label html-for="name">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    className="pure-input-1"
+                  />
+                  <label html-for="email">Email</label>
+                  <input
+                    id="email"
+                    name="_replyto"
+                    type="email"
+                    className="pure-input-1"
+                  />
+                  <label html-for="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    className="pure-input-1"
+                    placeholder="Tell me about your next project!"
+                  />
+                </fieldset>
+                <input
+                  className="button button-pill"
+                  type="submit"
+                  value="Send"
+                />
+              </form>
+            </div>
+          </div>
         </section>
       </div>
     );
