@@ -5,12 +5,27 @@ import Heading from "../components/common/heading/Heading";
 import PortfolioItem from "../components/common/cards/PortfolioItem";
 import Footer from "../components/footer/Footer";
 import { Element } from "react-scroll";
+import Head from "next/head";
 import "./Home.scss";
 
 class Home extends React.Component {
   render() {
     return (
       <div className="Home">
+        <Head>
+          <title>Lou Caponi - Software Developer</title>
+          <meta property="og:title" content="Lou Caponi - Software Developer" />
+          <meta
+            property="og:description"
+            content="JavaScript Developer from Long Island, New York with a strong focus on modern frontend libraries, frameworks, and tooling."
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.loucaponi.com" />
+          <meta
+            property="og:image"
+            content="https://www.loucaponi.com/static/images/bg.jpeg"
+          />
+        </Head>
         <section className="Header">
           <div className="dark-layer">
             <Navbar />
