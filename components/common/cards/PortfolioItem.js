@@ -13,12 +13,19 @@ const PortfolioItem = ({
 }) => {
   return (
     <div className="PortfolioItem shadow" onClick={onClick}>
-      <div className="image-container">
-        <img src={imageSrc} alt="PortfolioItem" />
+      <div
+        className="image-container"
+        style={{
+          background: `url(${imageSrc})`,
+          backgroundSize: "cover",
+          position: "relative"
+        }}
+      >
+        <div className="dark-layer" />
       </div>
       <div className="content-container">
         <h2>{title}</h2>
-        <p>{description}</p>
+        <p className="text-muted">{description}</p>
         <div className="tags-container">{tags.map(i => <Tag>{i}</Tag>)}</div>
         <div className="button-row">
           {githubLink && (

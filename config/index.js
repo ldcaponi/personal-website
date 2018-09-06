@@ -8,6 +8,10 @@ export const homepageLinks = [
     scrollTo: "CodeSamples"
   },
   {
+    text: "Skills",
+    scrollTo: "Skills"
+  },
+  {
     text: "Contact",
     scrollTo: "Contact"
   }
@@ -25,5 +29,7 @@ export const skills = [
   "Sass",
   "Webpack",
   "HTML",
-  "CSS"
+  "CSS",
+  "Git",
+  "Azure CI/CD"
 ];
