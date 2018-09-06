@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll } from "react-scroll";
 import "./Footer.scss";
 
 const Footer = props => {
@@ -15,6 +16,13 @@ const Footer = props => {
           <img src="/static/images/github.png" alt="linkedin" />
         </a>
       </div>
+
+      <button
+        className="button button-small"
+        onClick={() => animateScroll.scrollToTop()}
+      >
+        Back to Top
+      </button>
     </div>
   );
 };

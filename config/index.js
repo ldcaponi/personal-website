@@ -1,11 +1,14 @@
 export const homepageLinks = [
   {
-    text: "About"
+    text: "About",
+    scrollTo: "AboutMe"
   },
   {
-    text: "Projects"
+    text: "Projects",
+    scrollTo: "CodeSamples"
   },
   {
-    text: "Contact"
+    text: "Contact",
+    scrollTo: "Contact"
   }
 ];
