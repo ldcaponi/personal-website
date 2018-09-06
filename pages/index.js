@@ -6,6 +6,8 @@ import PortfolioItem from "../components/common/cards/PortfolioItem";
 import Footer from "../components/footer/Footer";
 import { Element } from "react-scroll";
 import Head from "next/head";
+import Tag from "../components/common/cards/Tag";
+import { skills } from "../config";
 import "./Home.scss";
 
 class Home extends React.Component {
@@ -105,6 +107,23 @@ class Home extends React.Component {
                   demoLink="https://objective-northcutt-d138c8.netlify.com/"
                   githubLink="https://github.com/ldcaponi/react-dashboard-starter"
                 />
+              </div>
+            </div>
+          </section>
+        </Element>
+
+        <Element name="Skills">
+          <section className="Skills">
+            <div className="text-center">
+              <Heading>Skills</Heading>
+            </div>
+            <div className="container">
+              <div className="row">
+                {skills.map(i => (
+                  <Tag style={{ margin: "0 auto" }} key={i}>
+                    {i}
+                  </Tag>
+                ))}
               </div>
             </div>
           </section>

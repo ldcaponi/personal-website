@@ -1,18 +1,19 @@
 import React from "react";
 
-const Tag = ({ children }) => {
+const Tag = ({ children, style }) => {
   return (
-    <div
-      style={{
-        padding: "5px 10px",
-        backgroundColor: "dodgerblue",
-        color: "white",
-        display: "inline-block",
-        marginRight: 8,
-        marginBottom: 8
-      }}
-    >
-      {children}
+    <div style={{ display: "inline-block", ...style }}>
+      <div
+        style={{
+          padding: "5px 10px",
+          backgroundColor: "dodgerblue",
+          color: "white",
+          marginRight: 8,
+          marginBottom: 8
+        }}
+      >
+        {children}
+      </div>
     </div>
   );
 };

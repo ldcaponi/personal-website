@@ -12,3 +12,18 @@ export const homepageLinks = [
     scrollTo: "Contact"
   }
 ];
+
+export const skills = [
+  "JavaScript",
+  "React",
+  "Angular JS",
+  "Vue JS",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "Jest",
+  "Sass",
+  "Webpack",
+  "HTML",
+  "CSS"
+];
