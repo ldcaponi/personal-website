@@ -2,6 +2,19 @@ import React from "react";
 import "./PortfolioItem.scss";
 import Tag from "./Tag";
 
+const renderImageSection = imageSrc => (
+  <div
+    className="image-container"
+    style={{
+      background: `url(${imageSrc})`,
+      backgroundSize: "cover",
+      position: "relative"
+    }}
+  >
+    <div className="dark-layer" />
+  </div>
+);
+
 const PortfolioItem = ({
   title,
   description,
@@ -9,20 +22,13 @@ const PortfolioItem = ({
   onClick,
   imageSrc,
   demoLink,
-  githubLink
+  githubLink,
+  inverted
 }) => {
   return (
     <div className="PortfolioItem shadow" onClick={onClick}>
-      <div
-        className="image-container"
-        style={{
-          background: `url(${imageSrc})`,
-          backgroundSize: "cover",
-          position: "relative"
-        }}
-      >
-        <div className="dark-layer" />
-      </div>
+      {!inverted && renderImageSection(imageSrc)}
+
       <div className="content-container">
         <h2>{title}</h2>
         <p className="text-muted">{description}</p>
@@ -44,6 +50,8 @@ const PortfolioItem = ({
           )}
         </div>
       </div>
+
+      {inverted && renderImageSection(imageSrc)}
     </div>
   );
 };

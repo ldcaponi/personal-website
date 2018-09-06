@@ -107,6 +107,22 @@ class Home extends React.Component {
                   demoLink="https://objective-northcutt-d138c8.netlify.com/"
                   githubLink="https://github.com/ldcaponi/react-dashboard-starter"
                 />
+
+                <PortfolioItem
+                  inverted
+                  imageSrc={"/static/images/my-website.png"}
+                  title="My Personal Website"
+                  description="This project was built using Next JS utilizing server-rendered React.  Planning on integrating a blog soon, so using Next with static site generation is a clear choice."
+                  tags={[
+                    "Next",
+                    "React",
+                    ,
+                    "Bootstrap 4",
+                    "Sass",
+                    "Static Site Generation"
+                  ]}
+                  githubLink="https://github.com/ldcaponi/personal-website"
+                />
               </div>
             </div>
           </section>
