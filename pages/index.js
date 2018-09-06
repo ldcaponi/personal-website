@@ -8,6 +8,7 @@ import { Element } from "react-scroll";
 import Head from "next/head";
 import Tag from "../components/common/cards/Tag";
 import { skills } from "../config";
+import SocialIcons from "../components/common/icons/SocialIcons";
 import "./Home.scss";
 
 class Home extends React.Component {
@@ -49,6 +50,9 @@ class Home extends React.Component {
                 >
                   View Resume
                 </a>
+                <div className="icons-container">
+                  <SocialIcons />
+                </div>
               </div>
             </div>
           </div>

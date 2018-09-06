@@ -29,6 +29,13 @@ section.Header {
   .my-resume {
     margin-top: 10px;
   }
+
+  .icons-container {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
 }
 
 section.AboutMe {
