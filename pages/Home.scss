@@ -41,6 +41,8 @@ section.Experience {
 
 section.CodeSamples {
   background: #eee;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 section.Contact {
@@ -51,6 +53,27 @@ section.Contact {
   }
   input {
     margin-bottom: 10px !important;
+  }
+
+  fieldset {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  input:not([type="submit"]),
+  textarea {
+    background-color: darken(dodgerblue, 20%);
+    color: white;
+    border-radius: 4px;
+    width: 500px;
+  }
+
+  .form-button-container {
+    width: 500px;
+    margin: 0 auto;
+    input {
+      width: 100%;
+    }
   }
 
   .section-header {

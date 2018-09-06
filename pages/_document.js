@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Nunito"
+            href="https://fonts.googleapis.com/css?family=Nunito:200,300,400"
             rel="stylesheet"
           />
           <link rel="stylesheet" href="/_next/static/style.css" />

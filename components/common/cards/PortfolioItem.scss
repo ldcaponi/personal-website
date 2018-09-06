@@ -1,3 +1,48 @@
 .PortfolioItem {
-  background-color: navy;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 300px;
+  width: 100%;
+
+  h2 {
+    font-weight: 300;
+  }
+
+  .image-container {
+    height: 100%;
+    display: inline-block;
+    width: 400px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .content-container {
+    padding: 20px;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    width: calc(100% - 400px);
+
+    .tags-container {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    .image-container {
+      display: none;
+    }
+
+    .content-container {
+      width: 100%;
+    }
+  }
 }

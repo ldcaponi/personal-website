@@ -67,14 +67,23 @@ class Home extends React.Component {
         <section className="Experience">hi</section>
         <section className="CodeSamples">
           <div className="text-center">
-            <Heading>Portfolio</Heading>
+            <Heading>Projects</Heading>
           </div>
-          <div className="row">
-            <div className="col-lg-6 col-sm-12">
+          <div className="container">
+            <div className="row">
               <PortfolioItem
+                imageSrc={"/static/images/dashboard3.png"}
                 title="React Dashboard Starter"
-                description="Some description"
-                tags={["Javascript", "Sass"]}
+                description="This project was created as a portfolio piece to display the use of React, React Router, Bootstrap 4, and Chart.js."
+                tags={[
+                  "React",
+                  "React Router",
+                  "Bootstrap 4",
+                  "Sass",
+                  "Webpack"
+                ]}
+                demoLink="https://objective-northcutt-d138c8.netlify.com/"
+                githubLink="https://github.com/ldcaponi/react-dashboard-starter"
               />
             </div>
           </div>
@@ -95,28 +104,30 @@ class Home extends React.Component {
                     id="name"
                     name="name"
                     type="text"
-                    className="pure-input-1"
+                    className="pure-input"
                   />
                   <label html-for="email">Email</label>
                   <input
                     id="email"
                     name="_replyto"
                     type="email"
-                    className="pure-input-1"
+                    className="pure-input"
                   />
                   <label html-for="message">Message</label>
                   <textarea
                     name="message"
                     id="message"
-                    className="pure-input-1"
-                    placeholder="Tell me about your next project!"
+                    className="pure-input"
+                    rows="7"
                   />
                 </fieldset>
-                <input
-                  className="button button-pill"
-                  type="submit"
-                  value="Send"
-                />
+                <div className="form-button-container">
+                  <input
+                    className="button button-pill"
+                    type="submit"
+                    value="Send"
+                  />
+                </div>
               </form>
             </div>
           </div>

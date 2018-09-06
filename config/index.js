@@ -1,9 +1,9 @@
 export const homepageLinks = [
   {
-    text: "Skills"
+    text: "About"
   },
   {
-    text: "Experience"
+    text: "Projects"
   },
   {
     text: "Contact"
