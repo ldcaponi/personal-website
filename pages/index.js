@@ -26,7 +26,7 @@ class Home extends React.Component {
               </div>
               <div className="my-resume">
                 <a
-                  href="/static/files/Resume_Caponi_Lou.pdf"
+                  href="/static/files/Resume__Caponi_Lou.pdf"
                   target="_blank"
                   className="button button-primary button-pill"
                 >
