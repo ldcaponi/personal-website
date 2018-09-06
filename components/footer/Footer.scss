@@ -1,0 +1,17 @@
+.Footer {
+  height: 100px;
+  background-color: darken(dodgerblue, 30%);
+
+  .icons-container {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 25px;
+
+    img {
+      cursor: pointer;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+}

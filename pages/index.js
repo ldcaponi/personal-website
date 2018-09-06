@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade";
 import Navbar from "../components/navbar/Navbar";
 import Heading from "../components/common/heading/Heading";
 import PortfolioItem from "../components/common/cards/PortfolioItem";
+import Footer from "../components/footer/Footer";
 import "./Home.scss";
 
 class Home extends React.Component {
@@ -132,6 +133,7 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     );
   }
