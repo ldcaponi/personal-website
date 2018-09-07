@@ -42,3 +42,24 @@ body {
 .text-muted {
   color: #6c757d !important;
 }
+
+.center-children {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.center-vertically {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.DIB {
+  display: inline-block;
+}
+
+.pl15 {
+  padding-left: 15px;
+}

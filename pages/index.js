@@ -9,6 +9,7 @@ import Head from "next/head";
 import Tag from "../components/common/cards/Tag";
 import { skills } from "../config";
 import SocialIcons from "../components/common/icons/SocialIcons";
+import Headroom from "react-headroom";
 import "./Home.scss";
 
 class Home extends React.Component {
@@ -31,7 +32,11 @@ class Home extends React.Component {
         </Head>
         <section className="Header">
           <div className="dark-layer">
-            <Navbar />
+            <Headroom>
+              <div className="dark-layer">
+                <Navbar />
+              </div>
+            </Headroom>
             <div className="callout center-all">
               <Fade bottom>
                 <div className="my-name">Lou Caponi</div>

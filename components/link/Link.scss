@@ -1,11 +1,11 @@
 .LC_link {
-  background-image: linear-gradient(dodgerblue, dodgerblue),
+  background-image: linear-gradient(white, white),
     linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   background-size: 0 5px, auto;
   background-repeat: no-repeat;
   background-position: center bottom;
   transition: all 0.2s ease-out;
-  padding: 20px 10px;
+  padding: 20px 10px 10px 10px;
   cursor: pointer;
   color: white;
   font-family: "Nunito", sans-serif;
