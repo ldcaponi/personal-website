@@ -2,3 +2,4 @@ node_modules
 .next
 out
 config/posts/allPosts.json
+.DS_Store

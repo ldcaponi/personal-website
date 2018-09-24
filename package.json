@@ -23,7 +23,8 @@
     "start": "next start",
     "preexport": "npm run generatePosts",
     "export": "next build && next export",
-    "generatePosts": "m2j -c ./config/posts/*.md -o ./config/posts/allPosts.json"
+    "generatePosts":
+      "m2j -c ./config/posts/*.md -o ./config/posts/allPosts.json"
   },
   "author": "",
   "license": "ISC"

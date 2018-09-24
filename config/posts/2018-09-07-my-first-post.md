@@ -2,7 +2,7 @@
 title: My First Post
 author: Anton C.
 slug: "2018-09-07-my-first-post"
-date: "2018-09-07 15:00"
+date: "September24, 2018"
 tags:
   - JavaScript
   - React
