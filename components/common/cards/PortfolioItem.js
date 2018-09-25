@@ -1,4 +1,5 @@
 import React from "react";
+import ShadowCard from "./ShadowCard";
 import "./PortfolioItem.scss";
 import Tag from "./Tag";
 
@@ -26,7 +27,7 @@ const PortfolioItem = ({
   inverted
 }) => {
   return (
-    <div className="PortfolioItem shadow" onClick={onClick}>
+    <ShadowCard className="PortfolioItem">
       {!inverted && renderImageSection(imageSrc)}
 
       <div className="content-container">
@@ -52,7 +53,7 @@ const PortfolioItem = ({
       </div>
 
       {inverted && renderImageSection(imageSrc)}
-    </div>
+    </ShadowCard>
   );
 };
 
