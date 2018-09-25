@@ -1,5 +1,6 @@
 import React from "react";
 import allPosts from "../config/posts/allPosts.json";
+import Breadcrumb from "../components/common/breadcrumb/Breadcrumb";
 import "./post.scss";
 var showdown = require("showdown"),
   converter = new showdown.Converter();
@@ -10,6 +11,12 @@ class Post extends React.Component {
     return (
       <div className="Post">
         <div className="markdown-body">
+          <Breadcrumb
+            items={[
+              { text: "Home", href: "/" },
+              { text: "Blog", href: "/blog" }
+            ]}
+          />
           <section className="Post_header">
             <div className="Post_title">{title}</div>
             <div className="Post_date">{date}</div>
