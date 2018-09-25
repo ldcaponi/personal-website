@@ -6,7 +6,7 @@ const Breadcrumb = ({ items }) => {
   return (
     <div className="Breadcrumb">
       {items.map((i, index) => (
-        <div className="Breadcrumb_item">
+        <div key={i.text} className="Breadcrumb_item">
           {!i.active && (
             <Link href={i.href}>
               <a>{i.text}</a>

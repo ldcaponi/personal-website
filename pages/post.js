@@ -1,6 +1,7 @@
 import React from "react";
 import allPosts from "../config/posts/allPosts.json";
 import Breadcrumb from "../components/common/breadcrumb/Breadcrumb";
+import Article from "../components/common/wrappers/Article";
 import "./post.scss";
 var showdown = require("showdown"),
   converter = new showdown.Converter();
@@ -10,7 +11,7 @@ class Post extends React.Component {
     const { content, preview, title, date } = this.props.post;
     return (
       <div className="Post">
-        <div className="markdown-body">
+        <Article>
           <Breadcrumb
             items={[
               { text: "Home", href: "/" },
@@ -26,7 +27,7 @@ class Post extends React.Component {
               __html: converter.makeHtml(content)
             }}
           />
-        </div>
+        </Article>
       </div>
     );
   }
