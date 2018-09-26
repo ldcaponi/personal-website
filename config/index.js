@@ -12,6 +12,10 @@ export const homepageLinks = [
     scrollTo: "Skills"
   },
   {
+    text: "Blog",
+    scrollTo: "Blog"
+  },
+  {
     text: "Contact",
     scrollTo: "Contact"
   }

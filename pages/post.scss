@@ -1,0 +1,19 @@
+@import "../components/common/styles/Common.scss";
+
+.Post {
+  background-color: #eee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .Post_header {
+    padding: 50px;
+    .Post_title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 42px;
+    }
+
+    .Post_date {
+      text-align: center;
+    }
+  }
+}

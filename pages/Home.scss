@@ -54,6 +54,18 @@ section.CodeSamples {
   padding-bottom: 50px;
 }
 
+section.Blog {
+  text-align: center;
+  background: #eee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .col-sm-12,
+  .col-lg-6 {
+    margin: 0 auto;
+  }
+}
+
 section.Contact {
   padding: 50px 0;
   background: dodgerblue;

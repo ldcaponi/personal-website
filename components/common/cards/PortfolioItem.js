@@ -1,4 +1,5 @@
 import React from "react";
+import ShadowCard from "./ShadowCard";
 import "./PortfolioItem.scss";
 import Tag from "./Tag";
 
@@ -26,13 +27,15 @@ const PortfolioItem = ({
   inverted
 }) => {
   return (
-    <div className="PortfolioItem shadow" onClick={onClick}>
+    <ShadowCard className="PortfolioItem">
       {!inverted && renderImageSection(imageSrc)}
 
       <div className="content-container">
         <h2>{title}</h2>
         <p className="text-muted">{description}</p>
-        <div className="tags-container">{tags.map(i => <Tag>{i}</Tag>)}</div>
+        <div className="tags-container">
+          {tags.map(i => <Tag key={i}>{i}</Tag>)}
+        </div>
         <div className="button-row">
           {githubLink && (
             <a href={githubLink} className="button button-pill" target="_blank">
@@ -52,7 +55,7 @@ const PortfolioItem = ({
       </div>
 
       {inverted && renderImageSection(imageSrc)}
-    </div>
+    </ShadowCard>
   );
 };
 
