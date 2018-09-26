@@ -3,6 +3,7 @@ title: My First Post
 author: Anton C.
 slug: "2018-09-07-my-first-post"
 date: "September24, 2018"
+description: "My first post small sentence describing this"
 tags:
   - JavaScript
   - React

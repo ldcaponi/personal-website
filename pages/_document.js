@@ -9,6 +9,10 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Nunito:200,300,400"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css?family=Oswald:300"
+            rel="stylesheet"
+          />
           <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
         <body>

@@ -1,0 +1,21 @@
+@import "../components/common/styles/Common.scss";
+
+.Blog_header {
+  height: 150px;
+  background-color: white;
+  text-align: center;
+}
+
+.Blog {
+  background-color: #eee;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .Blog_post-list {
+    .Blog_item_body {
+      font-family: "Oswald", sans-serif;
+    }
+  }
+}
