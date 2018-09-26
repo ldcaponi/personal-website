@@ -10,6 +10,9 @@ import Tag from "../components/common/cards/Tag";
 import { skills } from "../config";
 import SocialIcons from "../components/common/icons/SocialIcons";
 import Headroom from "react-headroom";
+import allPosts from "../config/posts/allPosts.json";
+import BlogPostCard from "../components/common/cards/BlogPostCard";
+import Link from "next/link";
 import "./Home.scss";
 
 class Home extends React.Component {
@@ -151,6 +154,31 @@ class Home extends React.Component {
                 ))}
               </div>
             </div>
+          </section>
+        </Element>
+
+        <Element name="Blog">
+          <section className="Blog">
+            <div className="text-center">
+              <Heading>Recent Posts</Heading>
+            </div>
+
+            <div className="container">
+              <div className="row">
+                <div className="col-sm-12 col-md-6">
+                  {Object.keys(allPosts)
+                    .reverse()
+                    .slice(0, 2)
+                    .map(i => <BlogPostCard key={i} post={allPosts[i]} />)}
+                </div>
+              </div>
+            </div>
+
+            <Link href="/blog">
+              <button className="button button-primary button-pill">
+                See More Posts...
+              </button>
+            </Link>
           </section>
         </Element>
 
