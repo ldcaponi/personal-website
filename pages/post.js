@@ -8,7 +8,7 @@ var showdown = require("showdown"),
 
 class Post extends React.Component {
   render() {
-    const { content, preview, title, date } = this.props.post;
+    const { content, preview, title, date, author } = this.props.post;
     return (
       <div className="Post">
         <Article>
@@ -20,7 +20,9 @@ class Post extends React.Component {
           />
           <section className="Post_header">
             <div className="Post_title">{title}</div>
-            <div className="Post_date">{date}</div>
+            <div className="Post_date">
+              {author} &#183; {date}
+            </div>
           </section>
           <div
             dangerouslySetInnerHTML={{

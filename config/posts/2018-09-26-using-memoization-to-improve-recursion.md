@@ -28,8 +28,8 @@ Notice, `fib` will recursively call itself in a descending fashion, until it rea
 
 This is a nice solution visually, but let's look at what happens when we call `fib(3)`:
 
-`fib(3)` calls `fib(2)` and `fib(1)`.
-`fib(2)` calls `fib(1)` and `fib(0)`.
+- `fib(3)` calls `fib(2)` and `fib(1)`
+- `fib(2)` calls `fib(1)` and `fib(0)`
 
 Do you notice the issue here? We are calling `fib(1)` an extra time here. This may seem like a trivial example, but in recursion it's important to stop unnecessary calls early on, because they can compound in some nasty ways. How can we stop calling functions that we have already called in the past?
 

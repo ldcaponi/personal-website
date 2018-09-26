@@ -165,12 +165,14 @@ class Home extends React.Component {
 
             <div className="container">
               <div className="row">
-                <div className="col-sm-12 col-md-6">
-                  {Object.keys(allPosts)
-                    .reverse()
-                    .slice(0, 2)
-                    .map(i => <BlogPostCard key={i} post={allPosts[i]} />)}
-                </div>
+                {Object.keys(allPosts)
+                  .reverse()
+                  .slice(0, 2)
+                  .map(i => (
+                    <div key={i} className="col-sm-12 col-lg-6">
+                      <BlogPostCard post={allPosts[i]} />
+                    </div>
+                  ))}
               </div>
             </div>
 
