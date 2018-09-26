@@ -7,7 +7,7 @@ const LinkList = ({ links, style }) => {
   return (
     <ul className="LC_link-list" style={{ ...style }}>
       {links.map(i => (
-        <li>
+        <li key={i.text}>
           <ScrollLink to={i.scrollTo} smooth>
             <Link>{i.text}</Link>
           </ScrollLink>

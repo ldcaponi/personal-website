@@ -33,7 +33,9 @@ const PortfolioItem = ({
       <div className="content-container">
         <h2>{title}</h2>
         <p className="text-muted">{description}</p>
-        <div className="tags-container">{tags.map(i => <Tag>{i}</Tag>)}</div>
+        <div className="tags-container">
+          {tags.map(i => <Tag key={i}>{i}</Tag>)}
+        </div>
         <div className="button-row">
           {githubLink && (
             <a href={githubLink} className="button button-pill" target="_blank">

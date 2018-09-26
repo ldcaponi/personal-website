@@ -10,7 +10,6 @@ import Article from "../components/common/wrappers/Article";
 
 class Blog extends React.Component {
   render() {
-    console.log(allPosts);
     return (
       <div>
         <Article>
@@ -25,7 +24,7 @@ class Blog extends React.Component {
             {Object.keys(allPosts)
               .reverse()
               .map(i => (
-                <ShadowCard>
+                <ShadowCard key={i}>
                   <div style={{ padding: 30 }}>
                     <h1>{allPosts[i].title}</h1>
                     <div className="Blog_item_body">
@@ -34,7 +33,7 @@ class Blog extends React.Component {
                       </p>
                       <p>{allPosts[i].description}</p>
                       {allPosts[i].tags &&
-                        allPosts[i].tags.map(t => <Tag>{t}</Tag>)}
+                        allPosts[i].tags.map(t => <Tag key={t}>{t}</Tag>)}
 
                       <p>
                         <Link href={`/post/${allPosts[i].slug}`}>
