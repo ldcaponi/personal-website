@@ -1,3 +1,9 @@
 .Blog_item_body {
   font-family: "Oswald", sans-serif;
 }
+
+.Blog_item_title {
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
+}

@@ -8,7 +8,7 @@ const BlogPostCard = ({ post }) => {
   return (
     <ShadowCard>
       <div style={{ padding: 30 }}>
-        <h1>{post.title}</h1>
+        <h1 className="Blog_item_title">{post.title}</h1>
         <div className="Blog_item_body">
           <p style={{ color: "#636c72" }}>
             {post.author} &#183; {post.date}
